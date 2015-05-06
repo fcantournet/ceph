@@ -52,7 +52,8 @@ HARDEN_CFLAGS = \
 	-fpie \
 	-fexceptions \
 	-Wp,-D_FORTIFY_SOURCE=2 \
-	--param=ssp-buffer-size=4
+	--param=ssp-buffer-size=4 \
+	-fstack-protector-strong
 
 HARDEN_LDFLAGS = \
 	-Wl,-z,relro
